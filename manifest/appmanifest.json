@@ -4,6 +4,7 @@
   "version": "1.0",
   "description": "Jan's Tic Tac Toe ist ein HTML5-Spiel, das offline funktioniert.",
   "default_locale": "de",
+  "theme_color": "#317EFB",
   "icons": [
     {
       "src": "../screens/icon_32.png",
