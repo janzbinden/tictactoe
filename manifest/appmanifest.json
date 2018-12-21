@@ -32,7 +32,11 @@
     }
   ],
   "screenshots": [
-    
+    {
+      "src": "../screen/screenshots/svg.png",
+      "type": "image/png",
+      "sizes": "1280x800"
+    }
   ],
   "categories": ["games", "logic games", "casual games", "family games"],
   "background_color": "#444",
