@@ -109,11 +109,13 @@
 
     function showWinner(feld) {
         status = true;
-        document.getElementById("container2").setAttribute("data-rainbow", "ja");
+        setTimeout(function() {
+            document.getElementById("container2").setAttribute("data-rainbow", "ja")
+        }, 2900);
+
         for (let i = 1; i < 10; i += 1) {
             document.getElementById("btn" + i).removeAttribute("data-class");
         }
-        document.getElementById("container2").style.backgroundColor = "#8248c4";
         if (board[feld] === 2) {
             document.getElementById("status").innerHTML = "X WON!";
         } else {
@@ -167,7 +169,9 @@
             if (xs.parentElement.getAttribute("data-sieg") !== "ja") {
                 xs.setAttribute("data-opacity", "ja");
             } else {
-                xs.setAttribute("data-blink", "ja");
+                setTimeout(function() {
+                    xs.setAttribute("data-blink", "ja")
+                }, 500);
             }
         });
 
