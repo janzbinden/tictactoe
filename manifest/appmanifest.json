@@ -4,29 +4,30 @@
   "version": "1.0",
   "description": "Jan's Tic Tac Toe ist ein HTML5-Spiel, das offline funktioniert.",
   "default_locale": "de",
+  "theme_color": "#317EFB",
   "icons": [
     {
-      "src": "screens/icon_32.png",
+      "src": "../screens/icon_32.png",
       "type": "image/png",
       "sizes": "32x32"
     },
     {
-      "src": "screens/icon_64.png",
+      "src": "../screens/icon_64.png",
       "type": "image/png",
       "sizes": "64x64"
     },
     {
-      "src": "screens/icon_128.png",
+      "src": "../screens/icon_128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "screens/icon_256.png",
+      "src": "../screens/icon_256.png",
       "type": "image/png",
       "sizes": "256x256"
     },
     {
-      "src": "screens/icon_512.png",
+      "src": "../screens/icon_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -42,6 +43,6 @@
   "background_color": "#444",
   "theme_color": "#444",
   "display": "standalone",
-  "start_url": "index.html",
+  "start_url": "../index.html",
   "author": "Jan Zbinden"
 }
