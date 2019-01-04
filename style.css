@@ -79,8 +79,6 @@ div[data-rainbow="ja"] {
     }
 }
 
-
-
 img[data-opacity="ja"] {
     animation: opacity 4s ease-out forwards;
 }
@@ -90,7 +88,7 @@ img[data-opacity="ja"] {
        opacity: 1;
     }
     100% {
-        opacity: 0.5;
+        opacity: 0.4;
     }
 }
 
