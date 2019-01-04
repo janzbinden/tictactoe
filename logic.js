@@ -1,4 +1,4 @@
-/*jslint browser:true, long: true, devel: true*/
+/*jslint browser:true, long: true, devel: true, for:true*/
 (function () {
     "use strict";
     let counter = 1;
@@ -50,6 +50,9 @@
             document.getElementById("btn" + i).style.borderWidth = "";
             document.getElementById("btn" + i).setAttribute("data-class", "hover");
             document.getElementById("btn" + i).removeAttribute("data-sieg");
+            document.getElementById("btn" + i).removeAttribute("data-hover");
+            document.getElementById("btn" + i).removeAttribute("data-opacity");
+            document.getElementById("btn" + i).removeAttribute("data-blink");
         }
         board = [0, 0, 0, 0, 0, 0, 0, 0, 0];
         counter = 1;
@@ -90,7 +93,7 @@
 
     function checkDraw() {
         if (!board.includes(0) && !status) {
-            document.getElementById("status").innerHTML = "It's a draw...";
+            document.getElementById("status").innerHTML = "It's draw...";
             document.getElementById("restart").disabled = false;
         }
     }
@@ -106,11 +109,13 @@
 
     function showWinner(feld) {
         status = true;
-        document.getElementById("container2").setAttribute("data-rainbow", "ja");
+        setTimeout(function() {
+            document.getElementById("container2").setAttribute("data-rainbow", "ja")
+        }, 2900);
+
         for (let i = 1; i < 10; i += 1) {
             document.getElementById("btn" + i).removeAttribute("data-class");
         }
-        document.getElementById("container2").style.backgroundColor = "#8248c4";
         if (board[feld] === 2) {
             document.getElementById("status").innerHTML = "X WON!";
         } else {
@@ -158,9 +163,18 @@
         for (let i = 0; i < 3; i += 1) {
             let btn = document.getElementById(btns[i]);
             btn.setAttribute("data-sieg", "ja");
-            btn.style.borderColor = "#413e4c";
-            btn.style.borderWidth = "5px";
         }
+        let x = document.getElementsByTagName("img");
+        Array.from(x).forEach(function (xs) {
+            if (xs.parentElement.getAttribute("data-sieg") !== "ja") {
+                xs.setAttribute("data-opacity", "ja");
+            } else {
+                setTimeout(function() {
+                    xs.setAttribute("data-blink", "ja")
+                }, 500);
+            }
+        });
+
     }
 
     function enableRestart() {
