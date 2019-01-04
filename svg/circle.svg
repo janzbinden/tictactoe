@@ -1,0 +1,10 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 110 110">
+    <defs>
+        <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_5">
+            <stop offset="0.4" stop-opacity="0.99" stop-color="#8248c4"/>
+            <stop offset="1" stop-opacity="0.99" stop-color="#ffae00"/>
+        </radialGradient>
+    </defs>
+    <g>
+        <text y="51.2" x="50.4" stroke-width="0.1" stroke="#0f0f00" transform="matrix(8.44305 0 0 7.36885 -423.842 -282.414)" fill="url(#svg_5)" font-size="21" font-family="'Courier New', Courier, monospace" id="svg_2">O</text>
+    </g></svg>
