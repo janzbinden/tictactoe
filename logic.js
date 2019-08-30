@@ -6,7 +6,7 @@
     let status = false;
 
 
-    /*function fInit() {
+    function fInit() {
         // ServiceWorker initialisieren
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", function () {
@@ -17,10 +17,10 @@
                 });
             });
         }
-    }*/
+    }
 
 
-    //fInit();
+    fInit();
     var onClick = function(btn) {
         let img = document.createElement("IMG");
         if (!status) {
