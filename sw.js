@@ -18,7 +18,7 @@ var urlsToCache = [
     "svg/cross.svg",
     "style.css",
     "logic.js",
-    "favicon.ico"
+    "favicon_v2.ico"
 ];
 
 self.addEventListener("install", function (event) {
