@@ -7,7 +7,7 @@
 /*jslint devel: true, browser: true, long: true */ /*global self fetch */
 
 var CACHE_NAME = "jans-tictactoe-cache";
-var CACHE_VERSION = "v1.0";
+var CACHE_VERSION = "v1.1";
 var CACHE = CACHE_NAME + "-" + CACHE_VERSION;
 
 var urlsToCache = [
@@ -18,7 +18,7 @@ var urlsToCache = [
     "svg/cross.svg",
     "style.css",
     "logic.js",
-    "favicon.ico"
+    "favicon_v2.ico"
 ];
 
 self.addEventListener("install", function (event) {
