@@ -110,7 +110,7 @@
 
     function checkDraw() {
         if (!board.includes(0) && !status) {
-            document.getElementById("status").innerHTML = "It's draw...";
+            document.getElementById("status").innerHTML = "It's a draw...";
             document.getElementById("restart").disabled = false;
         }
     }
